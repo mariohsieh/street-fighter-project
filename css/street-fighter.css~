@@ -1,0 +1,125 @@
+/* Mario Hsieh */
+body, ul, li, p, h1
+{
+	padding: 0px;
+	margin: 0px;
+}
+
+.center
+{
+	margin: 0px auto;
+}
+.block
+{
+	display: block;
+}
+header
+{
+	background-color: #000000;
+	padding: 5px;
+}
+	h1#main-title
+	{
+		color: #FFFFFF;
+	}
+section#background
+{
+	width: 600px;
+	height: 343px;
+	background-image: url("../images/bg/dudley-01.png");
+	padding: 20px;
+	background-repeat: no-repeat;
+}
+
+#ryu
+{
+	left: 30px;
+	top: 190px;
+	width: 78px;
+	height: 111px;
+	position: relative;
+	background-image: url('../images/idle/0.gif');
+	background-repeat: no-repeat;
+	-webkit-animation: idle .7s infinite;
+	-webkit-animation-play-state: running;
+}
+
+@-webkit-keyframes idle
+{
+	0% 	{background:url('../images/idle/0.gif');}
+	10% 	{background:url('../images/idle/1.gif');}
+	20% 	{background:url('../images/idle/2.gif');}
+	30% 	{background:url('../images/idle/3.gif');}
+	40% 	{background:url('../images/idle/4.gif');}
+	50%	{background:url('../images/idle/5.gif');}
+	60% 	{background:url('../images/idle/6.gif');}
+	70% 	{background:url('../images/idle/7.gif');}
+	80% {background:url('../images/idle/8.gif');}
+	90% {background:url('../images/idle/9.gif');}
+}
+
+@-webkit-keyframes walk-forward
+{
+	0% 	{background:url('../images/walk-forward/0.gif');}
+	10% 	{background:url('../images/walk-forward/1.gif');}
+	20% 	{background:url('../images/walk-forward/2.gif');}
+	30% 	{background:url('../images/walk-forward/3.gif');}
+	40% 	{background:url('../images/walk-forward/4.gif');}
+	50% 	{background:url('../images/walk-forward/5.gif');}
+	60% 	{background:url('../images/walk-forward/6.gif');}
+	70% 	{background:url('../images/walk-forward/7.gif');}
+	80% 	{background:url('../images/walk-forward/8.gif');}
+	90% 	{background:url('../images/walk-forward/9.gif');}
+	100% {background:url('../images/walk-forward/10.gif');}
+}
+
+@-webkit-keyframes walk-back
+{
+	0% 	{background:url('../images/walk-back/0.gif');margin-left: -20px;}
+	10% 	{background:url('../images/walk-back/1.gif');margin-left: -20px;}
+	20% 	{background:url('../images/walk-back/2.gif');margin-left: -20px;}
+	30% 	{background:url('../images/walk-back/3.gif');margin-left: -20px;}
+	40% 	{background:url('../images/walk-back/4.gif');margin-left: -20px;}
+	50% 	{background:url('../images/walk-back/5.gif');margin-left: -20px;}
+	60% 	{background:url('../images/walk-back/6.gif');margin-left: -20px;}
+	70% 	{background:url('../images/walk-back/7.gif');margin-left: -20px;}
+	80% 	{background:url('../images/walk-back/8.gif');margin-left: -20px;}
+	90% 	{background:url('../images/walk-back/9.gif');margin-left: -20px;}
+	100% {background:url('../images/walk-back/10.gif');margin-left: -20px;}
+}
+
+@-webkit-keyframes crouch-idle
+{
+	0% 	{background:url('../images/crouch-idle/0.gif');margin-top: 38px;}
+	25%	{background:url('../images/crouch-idle/1.gif');margin-top: 38px;}
+	50%	{background:url('../images/crouch-idle/2.gif');margin-top: 38px;}
+	75%	{background:url('../images/crouch-idle/3.gif');margin-top: 38px;}
+	100%	{background:url('../images/crouch-idle/4.gif');margin-top: 38px;}
+}
+
+@-webkit-keyframes jump-up
+{
+	0%	{background:url('../images/jump-up/0.gif');margin-top: -80px;}
+	5%	{background:url('../images/jump-up/1.gif');margin-top: -80px;}
+	10%	{background:url('../images/jump-up/2.gif');margin-top: -80px;}
+	15%	{background:url('../images/jump-up/3.gif');margin-top: -80px;}
+	20%	{background:url('../images/jump-up/4.gif');margin-top: -80px;}
+	30%	{background:url('../images/jump-up/5.gif');margin-top: -80px;}
+	40%	{background:url('../images/jump-up/6.gif');margin-top: -80px;}
+	45%	{background:url('../images/jump-up/7.gif');margin-top: -80px;}
+	50%	{background:url('../images/jump-up/8.gif');margin-top: -80px;}
+	60%	{background:url('../images/jump-up/10.gif');margin-top: -80px;}
+	65%	{background:url('../images/jump-up/12.gif');margin-top: -80px;}
+	70%	{background:url('../images/jump-up/13.gif');margin-top: -80px;}
+	80%	{background:url('../images/jump-up/15.gif');margin-top: -80px;}
+	90%	{background:url('../images/jump-up/17.gif');margin-top: -80px;}
+	100%	{background:url('../images/jump-up/19.gif');margin-top: -80px;}
+}
+
+
+
+
+
+
+
+

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<!-- Mario Hsieh -->
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+	<title>Street Fighter</title>
+
+	<!-- bootstrap links -->
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+	<script type="javascript" src="js/bootstrap.min.js"></script>
+
+	<!-- jQuery links -->
+	<script type="text/javascript" src="js/jquery-2.0.3.min.js"></script>
+     <!-- <script type="text/javascript" src="js/jquery-ui.min.js"></script> -->
+     <!--<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />-->
+
+	<link rel="stylesheet" type="text/css" href="css/street-fighter.css" />
+
+	<script type="text/javascript">
+	$(document).ready(function() {
+		// variables for x & y positions
+		var x_pos = 0;
+		//var y_pos = 0;
+		$(document).keydown(function(data){
+			console.log(data.keyCode);
+			var x = parseInt($("#ryu").css('left'));
+			x_pos = x;
+			//var y = parseInt($("#ryu").css('top'));
+			if (data.keyCode == 68 && x < 600) // walk forward
+			{
+				$('#ryu').css('width', '112px').css('height', '113px');
+				$('#ryu').css('-webkit-animation', 'walk-forward .8s infinite');
+				x_pos = x + 8;
+				$("#ryu").css({left: x_pos+"px"});
+			}
+			if (data.keyCode == 65 && x > 0) // walk back
+			{
+				//console.log(temp);
+				$('#ryu').css('width', '112px').css('height', '113px');
+				$('#ryu').css('-webkit-animation', 'walk-back 1s infinite');
+				x_pos = x - 6;
+				$("#ryu").css({left: x_pos+"px"});
+			}
+			if (data.keyCode == 83) // crouch
+			{
+				$('#ryu').css('width', '87px').css('height', '73px');
+				$('#ryu').css('-webkit-animation', 'crouch-idle .9s infinite');
+			}
+			if (data.keyCode == 87) // jump
+			{
+				$('#ryu').css('width', '86px').css('height', '192px');
+				$('#ryu').css('-webkit-animation', 'jump-up .8s infinite');
+			}
+		});
+		$(document).keyup(function(data){
+			if (data.keyCode != 87)
+			{
+				$('#ryu').css('width', '78px').css('height', '111px');
+				$('#ryu').css('-webkit-animation', 'idle .7s infinite');
+			}
+		});
+		//console.log(x_pos);
+		$(document).keypress(function(data){
+
+		});
+	});
+	</script>
+</head>
+<body>
+<header>
+	<h1 id="main-title" class="text-center">Street Fighter</h1>
+</header>
+<section id="background" class="center">
+
+	<div id="ryu"></div>
+
+</section>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

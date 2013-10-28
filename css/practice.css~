@@ -1,0 +1,79 @@
+/* Mario Hsieh */
+body, ul, li, p, h1
+{
+	padding: 0px;
+	margin: 0px;
+}
+
+.center
+{
+	margin: 0px auto;
+}
+.block
+{
+	display: block;
+}
+header
+{
+	background-color: #000000;
+	padding: 5px;
+}
+	h1#main-title
+	{
+		color: #FFFFFF;
+	}
+section
+{
+	padding: 20px;
+}
+
+div#ninja
+{
+	left: 30px;
+	top: 100px;
+	width: 59px;
+	height: 86px;
+	position: relative;
+	background-image: url('../images/right1.png');
+	animation: walkr .5s 1;
+	-webkit-animation: walkr .5s infinite;
+	-webkit-animation-play-state: paused;
+}
+
+@keyframes walkr
+{
+	0% 	{background:url('../images/right1.png');}
+	50%	{background:url('../images/right2.png');}
+	100% {background:url('../images/right1.png');}
+}
+
+@-webkit-keyframes walkr /* safari & chrome */
+{
+	0% 	{background:url('../images/right1.png');}
+	50%	{background:url('../images/right2.png');}
+	100% {background:url('../images/right1.png');}
+}
+
+@-webkit-keyframes walkl /* safari & chrome */
+{
+	0% 	{background:url('../images/left1.png');}
+	50%	{background:url('../images/left2.png');}
+	100% {background:url('../images/left1.png');}
+}
+
+@-webkit-keyframes jump /* safari & chrome */
+{
+	0% 	{top: 100px;}
+	50%	{top: 50px;}
+	100% {top: 100px;}
+}
+
+
+
+
+
+
+
+
+
+
